@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TimrFaceReplica</string>
+    <string name="message">Watch face tapped</string>
+    <string name="my_digital_name">My Digital</string>
+
+    <string name="configuration_header">Colors</string>
+</resources>

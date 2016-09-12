@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="digital_text_size">40dp</dimen>
+    <dimen name="digital_text_size_round">45dp</dimen>
+    <dimen name="digital_x_offset">15dp</dimen>
+    <dimen name="digital_x_offset_round">25dp</dimen>
+    <dimen name="digital_y_offset">90dp</dimen>
+
+
+
+    <dimen name="hour_x">10.0dip</dimen>
+    <dimen name="hour_x_square">5.0dip</dimen>
+    <dimen name="info_size">12.0dip</dimen>
+    <dimen name="info_y">120.0dip</dimen>
+    <dimen name="minute_x">100.0dip</dimen>
+    <dimen name="minute_x_square">90.0dip</dimen>
+    <dimen name="text_size">75.0dip</dimen>
+    <dimen name="time_x">140.0dip</dimen>
+    <dimen name="time_y">105.0dip</dimen>
+</resources>

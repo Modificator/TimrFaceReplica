@@ -304,7 +304,6 @@ public class WatchFaceService extends CanvasWatchFaceService {
                 canvas.drawBitmap(this.scale, this.seconds + this.width - 676.6F, this.height + this.height / 4.0F + this.height / 8.0F, mScalePaint);
                 canvas.drawBitmap(this.indicator, this.width - 25.0F, this.height + this.height / 5.0F + this.height / 14.0F, mArrowPaint);
 
-
 //                canvas.drawBitmap(scale, seconds + (width / 2 + width / 2 - width / 16) * -3, height + height / 4 + height / 10, mScalePaint);
 //                canvas.drawBitmap(scale, seconds + (width / 2 + width / 2 - width / 16 + width / 150) * 5, height + height / 4 + height / 10, mScalePaint);
 //                canvas.drawBitmap(scale, seconds + width / 2 + width / 2 - width / 20, height + height / 4 + height / 10, mScalePaint);
@@ -324,7 +323,6 @@ public class WatchFaceService extends CanvasWatchFaceService {
             canvas.drawText(getMinutes(), width + mMinutePaint.measureText(getMinutes()) / 20.0F, height + height / 15.0F, mMinutePaint);
             canvas.drawText(getDate(), width - mDatePaint.getStrokeWidth() / 2.0F, height / 3.0F + height / 25.0F, mDatePaint);
             canvas.drawText(getAmPm(), width * 2.0F - width / 2.0F, height + height / 4.0F, mTimePaint);
-
 
             if (battery) {
                 canvas.drawText(batteryLevel, width / 2 - width / 3, height + height / 4, mBatteryPaint);
@@ -390,17 +388,15 @@ public class WatchFaceService extends CanvasWatchFaceService {
             mTimePaint.setTextSize(infoTextSize);
             mBatteryPaint.setTextSize(infoTextSize);
         }
-
         private float getSeconds() {
 //            mTime.set(System.currentTimeMillis());
             mCalendar.setTimeInMillis(System.currentTimeMillis());
 //            return (mTime.second + (System.currentTimeMillis() % 1000) / 1000f) * (-10);
-
 //            float f = this.mCalendar.get(13) * -11.1F;;
 //            f = (this.mCalendar.get(13) + this.mCalendar.get(14) / 1000.0F) * -11.1F)
 
 
-            return SMOOTH_SECONDS ? (mCalendar.get(Calendar.HOUR) + mCalendar.get(Calendar.SECOND) / 1000f) * 11.1f : mCalendar.get(Calendar.HOUR) * 11.1f;
+            return SMOOTH_SECONDS ? (mCalendar.get(Calendar.SECOND) + mCalendar.get(Calendar.MILLISECOND) / 1000f) * -11.1f : mCalendar.get(Calendar.SECOND) * -11.1f;
         }
 
         private void initFormats() {

@@ -16,6 +16,11 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="com.google.android.wearable.watchface.category.COMPANION_CONFIGURATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.android.timrfacereplica.CONFIG_DIGITAL" />
+
             </intent-filter>
         </activity>
     </application>

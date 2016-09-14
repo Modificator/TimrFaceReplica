@@ -16,6 +16,9 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+//        maven {
+//            url "${rootProject.projectDir}/google-play-services-7-8-87"
+//        }
     }
 }
 

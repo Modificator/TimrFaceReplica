@@ -253,8 +253,8 @@ public class WatchFaceConfiguration extends AppCompatActivity implements MobvoiA
         switch (item.getItemId()) {
             case 0:
                 AlertDialog dialog = new AlertDialog.Builder(this)
-                        .setMessage(R.string.about_content)
-//                        .setMessage(loadAbout())
+//                        .setMessage(R.string.about_content)
+                        .setMessage(loadAbout())
                         .setPositiveButton("OK", null)
                         .show();
                 View view = dialog.findViewById(android.R.id.message);

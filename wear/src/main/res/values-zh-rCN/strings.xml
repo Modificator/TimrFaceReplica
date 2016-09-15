@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TimrFace复刻版</string>
+
+    <string name="message">Watch face tapped</string>
+    <string name="my_digital_name">TimrFaceReplica</string>
+    <string name="config_name">Settings</string>
+
+    <string name="configuration_header">表盘颜色</string>
+
+</resources>
